@@ -18,15 +18,15 @@ function showUI(){
         htmlObj.innerHTML += `${modulid}<br>`;
     });
 
-    htmlObj = document.getElementById("allgemeinTitle");
+    htmlObj = document.getElementById("mvpTitle");
     htmlObj.innerHTML = "";
-    htmlObj.innerHTML += " " + fach;
+    htmlObj.innerHTML += " " + mvp;
 
     htmlObj = document.getElementById("mvp");
     htmlObj.innerHTML = "";
     let faecherListe = spieler.superbowl.mvp;
-    for (let i=0;i<faecherListe.length; i++){
-        htmlObj.innerHTML += `${faecherListe[i]}<br>`;
+    for (let i=0;i<mvpListe.length; i++){
+        htmlObj.innerHTML += `${mvpListe[i]}<br>`;
     };
 
     htmlObj = document.getElementById("showIndex");
